@@ -343,3 +343,23 @@ nav .logo-wrapper img {
     font-size: 0.9rem;
     margin-top: 5px;
 }
+/* Style pour la barre de navigation */
+nav {
+    background-color: #333; /* Fond sombre pour le menu */
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-link {
+    color: white;           /* Texte blanc */
+    text-decoration: none;  /* Enlève le souligné moche */
+    margin: 0 15px;         /* Espace entre les liens */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+/* Effet au survol de la souris */
+.nav-link:hover {
+    color: #2980b9;         /* Le lien devient bleu quand on passe dessus */
+}
