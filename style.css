@@ -307,3 +307,39 @@ nav .logo-wrapper img {
     /* Ajoute une ombre légère pour le détacher si le fond est clair */
     filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.2)); 
 }
+/* Style global des cartes */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+/* Style spécifique pour le bloc tarif */
+.tarif {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa; /* Fond gris très clair */
+    border-radius: 5px;
+}
+
+.tarif strong {
+    color: #2980b9; /* Couleur bleue pour faire ressortir le prix */
+    font-size: 1.3rem;
+}
+
+/* Ajustement de ton bouton (pour qu'il ne soit pas trop collé au prix) */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
