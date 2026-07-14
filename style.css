@@ -363,3 +363,33 @@ nav {
 .nav-link:hover {
     color: #2980b9;         /* Le lien devient bleu quand on passe dessus */
 }
+/* Style moderne pour tous les boutons */
+.nav-link, .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2980b9; /* Bleu principal */
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 50px; /* Bouton arrondi (style moderne) */
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.4s ease; /* Animation fluide */
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Petite ombre portée */
+}
+
+/* Effet au survol de la souris */
+.nav-link:hover, .btn:hover {
+    background-color: #1c5980; /* Bleu plus foncé au survol */
+    transform: translateY(-3px); /* Le bouton monte légèrement */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* L'ombre s'agrandit */
+}
+
+/* Espacement spécifique pour le menu */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+}
