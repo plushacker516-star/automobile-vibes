@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription | Automobile Vibes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+        <a href="index.html" class="logo-wrapper">
+            <img src="IMAGE/logo.png" alt="Logo Automobile Vibes">
+        </a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="vehicules.html">Véhicules</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="marquee-container">
+</div>
+
+    <main class="content-page">
+        <h1>Formulaire de Réservation</h1>
+        <p style="text-align: center; margin-bottom: 20px;">Remplissez ce formulaire pour réserver votre véhicule.</p>
+
+        <form class="booking-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="car">Véhicule souhaité :</label>
+                <select id="car" name="car">
+                    <option value="yaris">Toyota Yaris</option>
+                    <option value="208">Peugeot 208</option>
+                    <option value="hilux">Toyota Hilux</option>
+                    <option value="l200">Mitsubishi L200</option>
+                    <option value="mercedes">Mercedes Classe E</option>
+                    <option value="bmw">BMW Série 5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date de début :</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <button type="submit" class="btn">Envoyer la demande</button>
+        </form>
+    </main>
+
+  <footer>
+    <div class="footer-legal">
+        <p><strong>Note importante :</strong> Toute réservation validée est non remboursable. En cas de dommage, tous les frais de réparation sont à la charge du locataire. 
+        <a href="conditions.html" style="color: #e74c3c; font-weight: bold; text-decoration: underline;">Voir les conditions complètes</a></p>
+    </div>
+    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #555;">
+    <p>&copy; 2026 Automobile Vibes - Kaolack, Sénégal</p>
+</footer>
+<script>
+    // 1. Récupérer le paramètre "voiture" dans l'URL (ex: ?voiture=yaris)
+    const params = new URLSearchParams(window.location.search);
+    const voitureChoisie = params.get('voiture');
+
+    // 2. Si une voiture a été choisie, on sélectionne l'option correspondante
+    if (voitureChoisie) {
+        const select = document.getElementById('car');
+        select.value = voitureChoisie;
+    }
+</script>
+</body>
+</html>
